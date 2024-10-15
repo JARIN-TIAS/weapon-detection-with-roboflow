@@ -1,0 +1,12 @@
+!pip install roboflow
+
+from roboflow import Roboflow
+rf = Roboflow(api_key="6xXpmbz0tfJ5ZJfzKTJh")
+project = rf.workspace("imam-maulana-b4xet").project("handgun-detection-jtvaj")
+version = project.version(9)
+dataset = version.download("yolov8")
+                
+                
+
+
+link : https://universe.roboflow.com/imam-maulana-b4xet/handgun-detection-jtvaj/model/9
